@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {color: red;}
+        h3 {color: blue;}
+    </style>
+</head>
+<body>
+    <p>select the text on the box: click and drag the mouse the select text</p>
+    <input type="text" name="jQuery" id="jQuery" value="Be-pratical tech solutions">
+    <h3></h3>
+
+    <script src="Assets/js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").select(function() {
+                $("h3").text("Some text was selected").fadeOut(2000)
+            })
+        })
+    </script>
+    
+</body>
+</html>

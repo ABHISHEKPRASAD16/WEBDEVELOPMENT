@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: tan;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="show">SHOW</button>
+    <button id="hide">HIDE</button>
+    <button id="toggle">TOGGLE</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam molestiae debitis hic eos excepturi provident omnis magni quam, architecto sequi vitae similique? Fugiat mollitia nobis excepturi, tempore aut expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam molestiae debitis hic eos excepturi provident omnis magni quam, architecto sequi vitae similique? Fugiat mollitia nobis excepturi, tempore aut expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam molestiae debitis hic eos excepturi provident omnis magni quam, architecto sequi vitae similique? Fugiat mollitia nobis excepturi, tempore aut expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam molestiae debitis hic eos excepturi provident omnis magni quam, architecto sequi vitae similique? Fugiat mollitia nobis excepturi, tempore aut expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam molestiae debitis hic eos excepturi provident omnis magni quam, architecto sequi vitae similique? Fugiat mollitia nobis excepturi, tempore aut expedita!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam molestiae debitis hic eos excepturi provident omnis magni quam, architecto sequi vitae similique? Fugiat mollitia nobis excepturi, tempore aut expedita!</p>
+
+    <script src="Assets/js/jQuery.js"></script>
+    <script>
+     $(document).ready(function(){
+         $("#hide").click(function(){
+             $("p").hide("fast");
+         })
+         $("#show").click(function(){
+             $("p").show("slow");
+         })
+
+         $("#toggle").click(function(){
+             $("p").toggle(2000);
+         })
+
+     })
+    </script>
+    
+</body>
+</html>

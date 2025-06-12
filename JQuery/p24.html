@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Enetr this heading</h1>
+    <h1 id="h2">Enetr this heading then leave.</h1>
+    <h1 id="h3">Enetr this heading</h1>
+    <h1 id="h4">Enetr this heading then leave.</h1>
+    <h1 id="h5">Enetr this heading</h1>
+    <h1 id="h6">Enetr this heading then leave.</h1>
+    <div></div>
+</body>
+</html>
+<script src="assets/js/jquery.js">    </script>
+<script>
+    var i=0;
+    $(document).ready(function(){
+        $("#h1").mouseenter(function(){
+            $("div").text("Mouse enterd on heading").show().fadeOut(2000);
+
+        });
+        $("#h2").mouseleave(function(){
+            $("div").text("Mouse leave").show().fadeOut(2000);
+            
+        });
+        $("#h3").mousedown(function(){
+            $("div").text("Mouse down").show().fadeOut(2000);
+
+        });
+        $("#h4").mouseup(function(){
+            $("div").text("Mouse up").show().fadeOut(2000);
+            
+        });
+        $("#h5").mouseover(function(){
+            $("div").text("Mouse over").show().fadeOut(2000);
+
+        });
+        $("#h6").mouseout(function(){
+            $("div").text("Mouse out").show().fadeOut(2000);
+            
+        });
+
+    });
+</script>

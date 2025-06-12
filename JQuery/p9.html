@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: gray;
+            color: lightgray;
+            padding: 20px;
+            width: 200px;
+            margin: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Start animation</button>
+    <div class="box">
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sit accusantium at aperiam est expedita dolore ullam! Iure, aliquam ducimus ex, quis, distinctio fugit explicabo at aliquid vero ratione doloremque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut eos eligendi perspiciatis molestias quaerat distinctio? Facilis, aut nostrum, aperiam dolore quis quod aliquam, doloribus est voluptatibus autem qui consequuntur culpa!
+        </p>
+    </div>
+    <script src="Assets/js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box").animate({width:"500px"})
+                .animate({height:"300px"},2000)
+                .animate({"margin-left":"150px"})
+                .animate({opacity:0.5})
+            
+            })
+        })
+    </script>
+</body>
+</html>

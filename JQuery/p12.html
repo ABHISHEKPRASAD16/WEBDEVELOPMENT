@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnbefore">insert content before each p element</button>
+    <button id="btnafter">insert content after each p element</button>
+    <button id="btnprepend">insert content prepend each p element</button>
+    <button id="btnappend">insert content append each p element</button>
+    <div>
+        <p>BE-PRACTICAL</p>
+        <p>TECH SOLUTIONS</p>
+    </div>
+    <script src="Assets/js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnbefore").click(function(){
+                $("div").before("<p><b>Hello javed</b></p>")
+            })
+            $("#btnafter").click(function(){
+                $("div").after("<p><b>this is jquery</b></p>")
+            })
+            $("#btnprepend").click(function(){
+                $("div").prepend("<label><b>Hello javed</b></label>")
+            })
+            $("#btnappend").click(function(){
+                $("div").append("<label><b>Hello javed</b></label>")
+            })
+        })
+    </script>
+</body>
+</html>

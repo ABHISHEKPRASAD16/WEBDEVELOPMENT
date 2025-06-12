@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <div>
+        <h1>welcome to jquery</h1>
+        <p>when u open ur web page in a browser adn load jquery libarry suuceessfuly,
+            it loads a gloabal function named <b>jquery()</b>. the global scope means scope of 
+            window so the gloabl <b>JQuery()</b> can be called loike <b>window.jquery()</b>
+        </p>
+    </div>
+    <div>
+        <h1>jquery code</h1>
+        <p>jquery code it intercat with the DOM elemnts and performs some opertauons on them</p>
+    
+        <div>
+            <p>jquery API includes builtin function ready() which detcts perticluar elemnts i sreday
+                ready() takes parametrs as callback.
+            </p>
+        </div>
+        
+</div>
+<script src="Assets/js/jQuery.js"></script>
+<script>
+  jQuery(document).ready(function(){
+
+  });
+
+  //or
+
+  window.jQuery(document).ready(function(){
+
+  });
+
+  //or
+
+  $(document).ready(function(){
+
+  });
+</script>
+        
+</body>
+</html>

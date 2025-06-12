@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ background-color:tan;;
+         color: #ffff;
+         margin:20px;
+     }
+     </style>
+</head>
+<body>
+    <button  type="button" id="fadein">fade in</button>
+    <button  type="button" id="fadeout">fade out</button>
+    <button  type="button" id="fadetoggel">fade toggle</button>
+    <button  type="button" id="fadeto">fade to</button>
+   
+
+    <div>
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis tempora nemo eos quod sequi minus officiis eius doloremque, tempore vel accusantium at porro ea dicta cum, maiores omnis. Autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis tempora nemo eos quod sequi minus officiis eius doloremque, tempore vel accusantium at porro ea dicta cum, maiores omnis. Autem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis tempora nemo eos quod sequi minus officiis eius doloremque, tempore vel accusantium at porro ea dicta cum, maiores omnis. Autem.</p>
+    </div>
+    <script src="Assets/js/jQuery.js">    </script>
+    <script>
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $("div").fadeIn("slow");
+            });
+            $("#fadeout").click(function(){
+                $("div").fadeOut("fast");
+            });
+            $("#fadetoggel").click(function(){
+                $("div").fadeToggle(200);
+            });
+            $("#fadeto").click(function(){
+                $("div").fadeTo(2000);
+            });
+        });
+    </script>
+</body>
+</html>

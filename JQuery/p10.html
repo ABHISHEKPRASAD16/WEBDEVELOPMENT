@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,p{border: 1px solid blue; padding: 10px;}
+    </style>
+</head>
+<body>
+    <button id="html">click for html</button>
+    <button id="reset">click for reset</button>
+
+    <p>This is a paragraph..!</p>
+    <p>this is another parA</p>
+
+    <div></div>
+    <script src="Assets/js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#html").click(function(){
+                $("div").html("hello <b>jQuery..! </b><h1>this is be practical..!</h1>");
+            })
+            $("#reset").click(function(){
+                location.reload();
+            })
+        })
+    </script>
+    
+</body>
+</html>

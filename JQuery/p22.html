@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <select id="se" name="actors">
+        <option>utappa</option>
+        <option selected="selected">katappa</option>
+        <option>verappa</option>
+        <option>bahubali</option>
+        <option>balla</option>
+        <option>awantika</option>
+    </select>
+    <div id="loc"></div>
+
+    <script src="Assets/js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+                document.getElementById("loc").innerHTML="You selected" + document.getElementById("se").value;
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{background-color: dimgray;color: #fff;padding: 10px;}
+    </style>
+</head>
+<body>
+    <p>HELLO GUYS!</p>
+    <p>THIS IS JQUERY</p>
+ <button id="q"> wrap a div element around each p element</button>
+ <button id="w"> wrap a div element around each p element</button>
+ <script src="Assets/js/jQuery.js"></script>
+ <script>
+     $(document).ready(function(){
+         $("#q").click(function(){
+                $("p").wrap("<h1></h1>")
+         })
+         $("#w").click(function(){
+             $("p").unwrap()
+         })
+     })
+ </script>
+</body>
+</html>
