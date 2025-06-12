@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <p>this tag is used to specify the additional details on the web page that user can view on demand</p>
+
+    </center>
+    <hr>
+    <details>
+        <summary>html about</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat alias voluptas voluptates ipsam, asperiores consectetur velit et excepturi? Est, iste neque. Eaque consectetur at totam optio, veniam dolor nesciunt nemo?
+
+        </p>
+    </details>
+    <details>
+        <summary>css about</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi est ab soluta harum blanditiis necessitatibus nobis aliquid, dolores, accusamus esse architecto hic amet, ut eaque? Itaque ullam exercitationem debitis.</p>
+    </details>
+    <hr>
+    <center>
+        <h3>TIME TAG</h3>
+        <p><b>HTML TIME</b>this tag is use to define time and date.it displays the time and date value in precise</p>
+    </center>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet <time>2:30</time> PM consectetur adipisicing elit. Maxime quasi deleniti sapiente expedita nobis culpa voluptas eveniet libero cumque non architecto consectetur nulla laudantium et quos, consequatur dolores doloremque eos!
+    </p>
+    <hr>
+    <center>
+        <h3>
+            this is dialog tag
+        </h3>
+        <p><b>it gives a popup dialogue box in webpage</b></p>
+    </center>
+    <hr>
+    <dialog id="dialog">
+        <button type="button" onclick="ClosePopUp();">&times;</button>
+        <h1>HI POPUP</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime animi beatae itaque, recusandae velit atque perspiciatis, sapiente praesentium ipsa modi ipsam? Consequuntur laudantium placeat esse aspernatur architecto ab nesciunt sint!</P>
+    </dialog>
+<button type="button" onclick="DisplayPopUp();">OPEN POPUP</button>
+<script>
+
+function DisplayPopUp(){
+ document.getElementById("dialog").show();
+}
+function ClosePopUp(){
+    document.getElementById("dialog").close()
+}
+</script>
+</body>
+</html>
