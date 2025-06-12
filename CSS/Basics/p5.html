@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICS</title>
+    <style>
+.combinator~h5{
+    background-color: red;
+}
+.combinator>div>h4{
+    background-color: blue;
+}
+.combinator+h5{
+    background-color: pink;
+}
+    </style>
+</head>
+<body>
+    <h1>There are four combinations in css</h1>
+    <ol>
+        <li>descendent selector(space)</li>
+        <li>child selector(>)</li>
+        <li>adjacent sibling selector(+)</li>
+        <li>general sibling selector(~)</li>
+    </ol>
+    <hr>
+    <h1>Descendent Selector (space) Example..!</h1>
+    <div class="combinator">
+        <h4>FIRST</h4>
+        <h4>SECOND</h4>
+        <h4>THIRD</h4>
+        <div>
+            <h4>FOURTH</h4>
+        </div>
+    </div>
+    <h5>fifth</h5>
+    <p>hello</p>
+    <h5>six</h5>
+    <p>hello</p>
+    <div>
+        <h5>seven</h5>
+    </div>
+    <h5>eigth</h5>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* COLOR DEFINING */
+.cssColor1{
+    background-color: darksalmon;
+    color: white;
+}
+.cssColor2, .jumbotron{
+    background-color: #38aaa4;
+    color: #2a7673;
+}
+.cssColor3{
+    background-color: rgb(155, 205, 101);
+    color: rgb(136, 186, 78);
+}
+.CommonColors, .jumbotron{
+    padding: 20px;
+    margin: 20px;
+}
+/* TITTLE CLASS */
+.jumbotron{
+     border-radius: 10px;
+}
+/* CSS FONT */
+.cssFont{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight:bold;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+/* CSS TEXT*/
+.cssText{
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-decoration: underline;
+    text-indent: 50px;
+}
+/* NAVIGATION BAR */
+.navBar{
+    background-color: #808080;
+}
+.navBar>ul{
+    list-style-type:none;
+    padding: 0%;
+    margin: 0%;
+}
+.navBar>ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+.navBar>ul>li:hover{
+    background-color: #fff;
+}
+.navBar>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+.navBar>ul>li:hover a{
+    color: #808080;
+}
+/* LIST MARKER POSITION */
+.list-marker-postion>ol>li{
+    background-color: teal;
+    margin-bottom: 20px;
+    padding: 20px;
+    list-style-position: inside;
+}
+.list-marker-postion>ol>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+.list-marker-postion>ol>li::marker{
+    color: yellow;
+    font-size: 20px;
+}
+.list-icon>ul>li{
+    list-style-image: url(../image/icon.png);
+}
+.list-shorthand>ul>li{
+  /*  list-style-type: none;
+    list-style-position: inside;
+    list-style-image: url(../image/icon.png);*/
+    background-color: teal;
+    list-style: decimal inside url(../image/icon.png);
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.empty-cell-table{
+    empty-cells: hide;
+}
+.odd-even-table, .odd-even-table th, .odd-even-table td{
+    border: 2px solid teal;
+    padding: 20px;
+    border-collapse: collapse;
+    color: white;
+}
+.odd-even-table tr>th{
+    background-color: gray;
+}
+.odd-even-table tr:nth-child(odd){
+    background-color: purple;
+}
+.odd-even-table tr:nth-child(even){
+    background-color: yellow;
+}
+.odd-even-table tr:hover{
+    background-color: black;
+}
+.odd-even-table tr>td{
+    height: 80px;
+    vertical-align: center;
+}
+.odd-even-table>caption{
+    color: red;
+    font-weight: bold;
+    caption-side: bottom;
+}
+.layout-table{
+    height: 10px;
+    width: 200px;
+    table-layout: fixed;
+}
+.layout-table td, .layout-table th{
+    overflow: auto;
+}
+/*navigation bar*/
+.header{
+    background-color: green;
+}
+.header>nav>ul{
+    list-style-type: decimal;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+header>nav>ul>li{
+    display: inline-block;
+    padding: 25px;
+}
+header>nav>ul>li:hover{
+    background-color: #fff;
+}
+header>nav>ul>li>a{
+    color: gray;
+    text-decoration: none;
+}
+header>nav>ul>li:hover a {
+    color:  green;
+}
+/*banner*/
+.banner1{
+    background-color: bisque;
+    height: 400px;
+
+}
+.banner1>h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+.banner1>h1:hover .banner2>h1:hover{
+    color: red;
+}
+.common-banner{
+    height: 400px;
+    padding: 30px;
+}
+.banner2{
+    background-image: url(../image/desktop.jpg);
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: 100%;
+}
