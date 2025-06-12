@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <script>
+        document.write("<h1>by array literal</h1>")
+         var  fruits = ["apple","banana","mango","orange","papaya",1000]
+
+         document.write(typeof(fruits)+"<br>")
+         document.write(fruits + "<br>")
+
+         document.write("<hr>")
+         document.write(fruits.length+"<br>")
+         document.write(fruits[0]+ "<br>")
+         document.write(fruits[1]+"<br>")
+         document.write("<hr>")
+
+         for(var i=0; i<fruits.length;i++){
+             document.write(fruits[i]+"<br>")
+         }
+
+         document.write("<hr>")
+         
+         document.write("<h1>by creating instance of array object directly (using new keyword</h1>")
+
+         var empName =  new Array();
+         console.log(typeof(empName)+ " " + "empName")
+
+         empName[0] = "nandan"
+         empName[1] = "abhi"
+         empName[2] = "maha"
+         empName[3] = "siri"
+         empName[4] = "chinnu"
+         empName[5]= "baby"
+
+
+         for(var i in empName){
+             document.write(empName[i]+"<br>")
+         }
+         document.write("<hr>")
+
+         document.write("<h1>ny using the constructor method (using keyword)</h1>")
+         var studentInfo =  new Array("ak","pk","khake","shoke")
+         for(var i in studentInfo){
+             document.write(studentInfo[i]+"<br>")
+         }
+    </script>
+    <script>
+        document.write("<hr>")
+        document.write("<h1>array methods..!</h1>")
+        document.write("<hr>")
+
+        document.write("<h3>adding new item to an elements in an array</h3>")
+        var colors = ["red","green","blue"];
+        colors.push("yellow","grey")
+
+        document.write(colors + "<br>")
+        document.write(colors.length+"<br>")
+
+        colors.unshift("Black")
+        document.write(colors + "<br>")
+        document.write(colors.length+"<br>")
+        document.write("<hr>")
+       
+        document.write("<h3>removing elements of an array</h3>")
+        var last = colors.pop()
+        document.write(last+ "<br>")
+        document.write(colors.length+"<br>")
+
+        var first = colors.shift()
+        document.write(first+"<br>")
+        document.write(colors.length+"<br>")
+        document.write("<hr>")
+
+        document.write("<h3>creating  a string from an array</h3>")
+        document.write(colors.join(" / ") + "<br>")
+        document.write(colors.join(" - ") + "<br>")
+        document.write("<hr>")
+        document.write("<h3>merging two or more arrays</h3>")
+
+        var pets = ["cat","dog","parrot"]
+        var wilds = ["tiger","wolf","zebra"]
+        var bugs = ["ant","bee"]
+        var animals = pets.concat(wilds,bugs)
+        document.write(animals+"<br>")
+        document.write(typeof(animals)+"<br>")
+        document.write("<hr>")
+       
+        document.write("<h3>searching through an array</h3>")
+
+        var tamilfruits=["apple","banana","mango","orange","papaya"]
+        document.write(tamilfruits.indexOf("apple")+"<br>")
+        document.write(tamilfruits.indexOf("banana")+"<br>")
+        document.write(tamilfruits.indexOf("orange")+"<br>")
+
+        var p = ["pooja","karo","pooja","kush"]
+        document.write(p.lastIndexOf("pooja"))
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="assets/js/ashyncronous.js"></script> 
+</head>
+<body>
+    <h3>External js function execution using call back (Asynchronous) </h3>
+    <p>Asynchronous code allows the program to be executed immediatly.</p>
+    <p>Asynchronous programming allows you to perform multiple requests simultaneously and complete more tasks faster.</p>
+    <script>
+        function loadScript(path,callback) {
+let scriptVar = document.createElement("script");
+scriptVar.src = path;
+
+scriptVar.onload = () => callback();
+document.head.append(scriptVar);
+
+}
+//loadScript("assets/js/ashyncronous.js",()=>{sum(10,20);})
+//setTimeout() is used for to stop a Asynchonous execution
+setTimeout("loadScript('assets/js/ashyncronous.js',()=>{sum(10,20);})",2000)
+    </script>
+</body>
+</html>

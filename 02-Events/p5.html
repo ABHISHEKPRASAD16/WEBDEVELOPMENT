@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt {
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+
+        h4 {
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>onmousewheel()</h3>
+    <h4 id="output"></h4>
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos laborum voluptates consequuntur amet
+            corporis minus! Corporis aut sit esse repudiandae commodi facere rerum amet laboriosam fuga possimus,
+            reiciendis numquam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam temporibus praesentium nobis odio voluptates
+            magnam perferendis, excepturi earum quam, beatae fuga exercitationem sapiente dicta repudiandae expedita
+            adipisci tenetur aliquam provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam saepe suscipit mollitia nihil
+            aperiam repudiandae commodi officia facere iure quis pariatur impedit ex, assumenda, excepturi quod
+            exercitationem, similique rerum?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus vero pariatur commodi dolore
+            officiis, similique dolores iusto mollitia asperiores vel. Corporis dolores fugiat tempora harum eum magnam
+            ipsa aliquid?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis culpa maxime. Sint aperiam optio
+            odit quibusdam. Illo provident corrupti, iste natus magni perspiciatis deserunt quibusdam debitis mollitia
+            commodi eaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi fugit minus voluptatibus illum impedit
+            ipsa, reprehenderit qui fugiat iusto ipsum maxime quos nulla perspiciatis! Officia provident repellat
+            temporibus ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos laborum voluptates consequuntur amet
+            corporis minus! Corporis aut sit esse repudiandae commodi facere rerum amet laboriosam fuga possimus,
+            reiciendis numquam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam temporibus praesentium nobis odio voluptates
+            magnam perferendis, excepturi earum quam, beatae fuga exercitationem sapiente dicta repudiandae expedita
+            adipisci tenetur aliquam provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam saepe suscipit mollitia nihil
+            aperiam repudiandae commodi officia facere iure quis pariatur impedit ex, assumenda, excepturi quod
+            exercitationem, similique rerum?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus vero pariatur commodi dolore
+            officiis, similique dolores iusto mollitia asperiores vel. Corporis dolores fugiat tempora harum eum magnam
+            ipsa aliquid?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis culpa maxime. Sint aperiam optio
+            odit quibusdam. Illo provident corrupti, iste natus magni perspiciatis deserunt quibusdam debitis mollitia
+            commodi eaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi fugit minus voluptatibus illum impedit
+            ipsa, reprehenderit qui fugiat iusto ipsum maxime quos nulla perspiciatis! Officia provident repellat
+            temporibus ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos laborum voluptates consequuntur amet
+            corporis minus! Corporis aut sit esse repudiandae commodi facere rerum amet laboriosam fuga possimus,
+            reiciendis numquam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam temporibus praesentium nobis odio voluptates
+            magnam perferendis, excepturi earum quam, beatae fuga exercitationem sapiente dicta repudiandae expedita
+            adipisci tenetur aliquam provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam saepe suscipit mollitia nihil
+            aperiam repudiandae commodi officia facere iure quis pariatur impedit ex, assumenda, excepturi quod
+            exercitationem, similique rerum?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus vero pariatur commodi dolore
+            officiis, similique dolores iusto mollitia asperiores vel. Corporis dolores fugiat tempora harum eum magnam
+            ipsa aliquid?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis culpa maxime. Sint aperiam optio
+            odit quibusdam. Illo provident corrupti, iste natus magni perspiciatis deserunt quibusdam debitis mollitia
+            commodi eaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi fugit minus voluptatibus illum impedit
+            ipsa, reprehenderit qui fugiat iusto ipsum maxime quos nulla perspiciatis! Officia provident repellat
+            temporibus ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos laborum voluptates consequuntur amet
+            corporis minus! Corporis aut sit esse repudiandae commodi facere rerum amet laboriosam fuga possimus,
+            reiciendis numquam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam temporibus praesentium nobis odio voluptates
+            magnam perferendis, excepturi earum quam, beatae fuga exercitationem sapiente dicta repudiandae expedita
+            adipisci tenetur aliquam provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam saepe suscipit mollitia nihil
+            aperiam repudiandae commodi officia facere iure quis pariatur impedit ex, assumenda, excepturi quod
+            exercitationem, similique rerum?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus vero pariatur commodi dolore
+            officiis, similique dolores iusto mollitia asperiores vel. Corporis dolores fugiat tempora harum eum magnam
+            ipsa aliquid?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis culpa maxime. Sint aperiam optio
+            odit quibusdam. Illo provident corrupti, iste natus magni perspiciatis deserunt quibusdam debitis mollitia
+            commodi eaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi fugit minus voluptatibus illum impedit
+            ipsa, reprehenderit qui fugiat iusto ipsum maxime quos nulla perspiciatis! Officia provident repellat
+            temporibus ad!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos laborum voluptates consequuntur amet
+            corporis minus! Corporis aut sit esse repudiandae commodi facere rerum amet laboriosam fuga possimus,
+            reiciendis numquam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam temporibus praesentium nobis odio voluptates
+            magnam perferendis, excepturi earum quam, beatae fuga exercitationem sapiente dicta repudiandae expedita
+            adipisci tenetur aliquam provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam saepe suscipit mollitia nihil
+            aperiam repudiandae commodi officia facere iure quis pariatur impedit ex, assumenda, excepturi quod
+            exercitationem, similique rerum?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus vero pariatur commodi dolore
+            officiis, similique dolores iusto mollitia asperiores vel. Corporis dolores fugiat tempora harum eum magnam
+            ipsa aliquid?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis culpa maxime. Sint aperiam optio
+            odit quibusdam. Illo provident corrupti, iste natus magni perspiciatis deserunt quibusdam debitis mollitia
+            commodi eaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi fugit minus voluptatibus illum impedit
+            ipsa, reprehenderit qui fugiat iusto ipsum maxime quos nulla perspiciatis! Officia provident repellat
+            temporibus ad!</p>
+    </div>
+    <script>
+        function wheelHandler() {
+            var pos = document.getElementById("txt")
+            document.getElementById("output").innerText = pos.scrollTop + " px";
+        }
+    </script>
+
+</body>
+
+</html>

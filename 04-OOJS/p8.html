@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>nested objects</h3>
+    <script>
+        var user = {
+            name:"Mahesh",
+            account: [
+                {
+                    bankId:123,
+                    accNo: 2323234,
+                    bName:"SBI",
+                    type:"sb"
+                },
+                {
+                    bankId: 234,
+                    accNo :34345,
+                    bName : "AXIS",
+                    type : "current"
+                }
+            ],
+            emp : {
+                company : "XYZ PVT LMTD",
+                salary:"2.5LPA",
+                designation : "web developer"
+            }
+        }
+
+        document.write(`<h3> Name is ${ user.name } </h3> `)
+        document.write(`<hr>`)
+
+        //user.account.forEach(function (item) {
+        // document .write(`<h3> Bank Id = ${item.bankId} </h3>`)
+        // document.write(`<h3> Bank accountno = ${item.accNo } </h3>`)
+        // document.write(`<h3> bank name = ${item.bName} <h3>`)
+        // document.write(`<h3> account type = ${item.type} </h3>`)        
+       // })
+
+       for(var i=0; i<user.account.length;i++){
+        document .write(`<h3> Bank Id = ${user.account[i].bankId} </h3>`)
+        document.write(`<h3> Bank accountno = ${user.account[i].accNo } </h3>`)
+        document.write(`<h3> bank name = ${user.account[i].bName} <h3>`)
+        document.write(`<h3> account type = ${user.account[i].type} </h3>`)   
+       }
+       document.write(`<hr>`)
+       document.write(`<h3> Company = ${user.emp.company} </h3>`)
+       document.write(`<h3> salary = ${ user['emp']['salary']} </h3>`)
+       document.write(`<h3> salary = ${user['emp']['designation']} </h3>`)
+
+</script>
+    
+</body>
+</html>

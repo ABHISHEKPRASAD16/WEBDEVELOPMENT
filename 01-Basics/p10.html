@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-BASICS</title>
+  </head>
+  <body>
+    <center>
+      <h1>Type Conversion</h1>
+    </center>
+    <hr />
+    <script>
+      document.write("3" - 2 + "<br>"); //OUTPUT:1
+      document.write("3" + 2 + "<br>"); //output:"32"(because + is also concatenaton operation)
+      document.write(3 + "2" + "<br>"); //output:32
+      document.write("3" * "2" + "<br>"); //output:6
+      document.write("10" / "2"); //output:5
+
+      document.write("<h1>converting values to number</h1>");
+      var str = "123";
+      document.write(typeof str + "<br>"); //output:string
+
+      var num = Number(str); // becomes a number 123
+      document.write(typeof num + "<br>"); //output:number
+
+      var number1 = Number("10.5");
+      document.write(typeof number1 + "<br>"); //output:number
+
+      var x = "123.343";
+      var y = 123.131313;
+
+      var a = Number(x); /*convert anytype to number*/
+      document.write(`<h3> Number = ${a} <h3>`);
+
+      var a1 = parseInt(x); // int values
+      document.write(`<h3> int = ${a1} </h3>`);
+
+      var a2 = parseFloat(x);
+      var a3 = parseFloat(y);
+
+      document.write(`<h3> float = ${a2} </h3>`);
+      document.write(`<h3> float = ${a3.toFixed(3)} </h3>`);
+
+      Number(true); //returns  1
+      Number(false); //returns 0
+      Number(null); // returns 0
+      Number(" 123"); //returns 123
+      Number(" "); //returns 0
+      Number(""); //returns  0
+      Number("123e-1"); // returns 12.3
+      Number("0xFF"); // returns "255"
+      Number("undefined"); //returns Nan
+      Number("null"); //returns Nan
+      Number("Hello World"); //returns Nan
+    </script>
+    <script>
+      document.write("<h1>Converting values to strings</h1>");
+      var bool = true;
+      document.write(typeof bool + "<br>"); //outputs:boolean
+
+      var str = String(bool); // becomes a string "true"
+      document.write(typeof str + "<br>"); //output:string
+
+      var str1 = String(10.5); //returns "10.5"
+      document.write("<p><b>str1</b></p>" + str1);
+      document.write("<p><b>str1</b></p>" + typeof str1);
+      String(123); //returns "123"
+      String(100 + 23); //returns "123"
+      String(true); // returns true
+      String(false); // returns "false"
+      String(123e-1); //returns "12.3"
+      String(0xff); //returna"255
+      String(undefined); // returns "undefined"
+      String(null); //returns "null"
+    </script>
+    <script>
+      document.write("<h1>Converting Values to Boolean</h1>");
+      Boolean(0); // returns false
+      Boolean(null); // returns false
+      Boolean(false); //returns false
+      Boolean(undefined); // returns flase
+      Boolean(Nan); // returs false
+      Boolean(""); //returns false
+      Boolean(1); //returns true
+      Boolean(true); // returns true
+    </script>
+    <script>
+      document.write("<h1> type conversion using operation </h1>");
+      var x = "10"; // x is a string
+      var y = +x;
+      alert(typeof y); // output:number
+      alert(y); //output:10
+
+      var x = 10; // x is a number
+      var y = x + "";
+      alert(typeof y); // output:string
+      alert(y); //output:10
+
+      var x = "15"; // x is a string
+      var y = x - 0;
+      alert(typeof y); // output:number
+      alert(y); //output:15
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kiran = "Global Kiran" //Global Vairable or window.kiran
+
+        function whoisThis(){
+            var kiran = "Local Kiran"; //Local variable
+
+            alert("Local Variable:" + kiran);
+            alert("Global Variable:"+ this.kiran)
+
+            window.chethan = "Global Chethan"
+
+        }
+        whoisThis();
+
+        function whoamI(){
+            alert("Global Variable:"+this.kiran)
+            alert("Global Variable:"+this.chethan)
+
+        }
+        whoamI();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Class syntax contains two componens</h3>
+    <ul>
+        <li>class declarations</li>
+        <li>class expressions</li>
+    </ul>
+    <hr>
+    <script>
+        document.write("<h1>class declaration</h1>");
+        //Example 1
+        class Student1{
+            constructor(){
+                var data1 = "this is default class";
+                document.write("<b>Student1 class:</b>"+data1+"<br><br>");
+            }
+        }
+     var stud1 = new Student1();
+
+     //Example 2
+     class Student2{
+         constructor(){}
+         display(){
+      var data2 = "this is a default class with custom method";
+      document.write("<b>student2 class:</b>"+data2+"<br><br>")
+     }
+    }
+
+     var stud2 = new Student2();
+        stud2.display();
+
+        //example 3
+        class Student3{
+            constructor(id,name){
+                this.id1 = id;
+                this.name1 = name;
+                //document.write(this.id1+""+this.name1+"<br>")
+            }
+            Display(){
+                document.write("<b>Student4 Class(with parameter:</b>"+ this.id1)
+            }
+        }
+    </script>
+</body>
+</html>

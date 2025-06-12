@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Spread(...) operator with math constructor</h3>
+    <!--an array into paramter-->
+    <script>
+        var num=[44,455,56,57,65,78,44];
+        document.write(`<h3> Max = ${Math.max(num)} </h3>`);
+        document.write(`<h3> Max = ${Math.max(...num)} </h3>`);//array into paramter
+        document.write(`<h3> Max = ${Math.max(44,455,56,57,65,78,44)} </h3>`);
+    </script>
+</body>
+</html>

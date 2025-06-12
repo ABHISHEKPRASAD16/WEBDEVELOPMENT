@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(){
+            this.name = "Be-PRACTICAL"
+            this.gender = "male";
+            //document.write(this.name +" "+ this.gender)
+        }
+        var stud = new Student()
+
+        document.write("<b>Student.prototype:</b>" + Student.prototype + "<br><br>") //object
+        console.log(Student.prototype);
+
+        document.write("<b>stud.prototype : </b>" + stud.prototype + "<br><br>")//undefined
+        console.log(stud.prototype);
+
+        document.write("<b>stud.__proto__:</b>" + stud.__proto__ + "<br><br>"); //object
+
+        document.write("<b>typeof Student.prototype : </b>" + typeof Student.prototype + "<br><br>")
+
+        document.write("<b>typeof stud.prototype : </b>" + typeof stud.prototype + "<br><br>")
+
+        document.write("<b>Object.keys: </b>"+ Object.keys(stud) + "<br><br>") // Retrieve all the properties name of specific object
+
+        //enumaerate properties of stud
+        for(var s in stud){
+            document.write('<b>enumaerate properties of stud: </b>'+s + "<br><br>")
+        }
+
+
+    </script>
+    
+</body>
+</html>
